@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    width: 100%;
+}
+.signin{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: yellow;
+}
