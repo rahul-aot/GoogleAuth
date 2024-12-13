@@ -14,8 +14,13 @@ export class LoginComponent {
   SocialAuthService=inject(SocialAuthService)
 
   OnInit(): void {
-   this.SocialAuthService.authState.subscribe((user) => {
-    console.log(user)
+   this.SocialAuthService.authState.subscribe({
+    next:(result) => {
+      console.log(result);
+    },
+    error: (err) => {
+      console.error(err);
+    }
    })
   }
 }
